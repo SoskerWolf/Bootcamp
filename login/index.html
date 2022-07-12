@@ -8,17 +8,30 @@
     <link rel="stylesheet" href="/css/index.css">
 </head>
 <body>
-    <!-- dsf,;-->
-    <div class="contenedor">
+    <div id="login" class="contenedor">
         <div class="form">
             <h4>Login Form</h4>
-            <p>Puede iniciar sesion o si usted no tiene cuenta puede registrarse.</p>
+            <p>Puede iniciar sesión o si usted no tiene cuenta puede registrarse.</p>
             <input type="text" placeholder="Email">
             <input type="password" placeholder="Password">
         </div>
         <div class="option">
-            <button id="register">Register</button>
-            <button id="login">Login</button>
+            <button class="select" onclick="showRegister()">Register</button>
+            <button>Login</button>
+        </div>
+    </div>
+
+    <div id="register" class="contenedor" style="display: none;">
+        <div class="form">
+            <h4>Register Form</h4>
+            <p>Crea una nueva cuenta registrándote, ya tienes una cuenta? presiona login.</p>
+            <input type="text" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <input type="password" placeholder="Password confirm">
+        </div>
+        <div class="option">
+            <button>Register</button>
+            <button class="select" onclick="showLogin()">Login</button>
         </div>
     </div>
     <script src="/js/index.js"></script>
